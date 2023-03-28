@@ -1,0 +1,368 @@
+/* Reseta CSS */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* CRIA O GRID */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 50fr;
+    grid-template-rows: 15vh 80vh 5vh;
+    grid-template-areas: "header header"
+                        "nav main"
+                        "nav footer";
+}
+
+
+/* TÍTULOS */
+legend h1{
+    font-weight: bolder;
+    font-size:large;
+}
+h1{
+    font-weight: bolder;
+    font-size:large;
+    color: #091F2D;
+    padding-left: 20px;
+}
+.txt-verde {
+    color: green;
+    font-size: medium;
+}
+
+
+/* CABEÇALHO */
+header {
+    background-color:#091F2D;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    text-decoration: none;
+    padding-left: 30px;
+    font-weight: bolder;
+}
+.iconlogo {
+    color: dodgerblue;
+    font-size: 30px;
+}
+.textlogo {
+    color: white;
+    font-size: small;
+}
+.minhaconta {
+    padding: 30px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+/* CORPO */
+main {
+    background-color: #091F2D;
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3vh 3vh 0vh 3vh ;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.box {
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    padding: 15px 10px 10px 10px;
+    border: 5px solid #0efff9;
+    border-radius: 15px;
+    overflow: auto;
+}
+.tablebox {
+    height: 85%;
+    overflow:auto;
+    margin-top:18px
+}
+.btnbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* BOTOES */
+.btn-verde {
+    color: white;
+    background-color: seagreen;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: small;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    margin-left: 10px;
+}
+.btn-verde:hover {
+    background-color: green;
+}
+.btn-azul {
+    color: white;
+    background-color: dodgerblue;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: small;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    margin-left: 10px;
+}
+.btn-azul:hover {
+    background-color: cornflowerblue;
+}
+.btn-vermelho {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: small;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    margin-left: 10px;
+}
+.btn-vermelho:hover {
+    background-color: crimson;
+}
+
+/* BOTOES TABELA */
+.btn-verde-tabela {
+    color: white;
+    background-color: seagreen;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    margin-left: 10px;
+}
+.btn-verde-tabela:hover {
+    background-color: green;
+}
+.btn-azul-tabela {
+    color: white;
+    background-color: dodgerblue;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    margin-left: 10px;
+}
+.btn-azul-tabela:hover {
+    background-color: cornflowerblue;
+}
+.btn-vermelho-tabela {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    margin-left: 10px;
+}
+.btn-vermelho-tabela:hover {
+    background-color: crimson;
+}
+
+/* TABELAS */
+.tabela {
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+    color: #091F2D;
+}
+
+.tabela td, .tabela th, .tabela tbody tr{
+    padding: 10px;
+    border-bottom: 2px solid #12486c;
+    text-align: center;
+}
+
+.tabela tbody tr:hover {
+    background-color: skyblue;
+    border-bottom: 2px solid #0efff9;
+}
+
+.devolvido {
+    background-color: seagreen;
+    color: white;
+    font-weight: bolder;
+
+}
+
+.atrasado {
+    font-weight: bolder;
+    color: red;
+}
+
+
+/*FORMULARIOS*/
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+fieldset {
+    border: none;
+    color: #091F2D;
+}
+.btnform {
+    padding: 5px 10px;
+}
+.tabelaform {
+    min-width: 100px;
+    max-width: 500px;
+}
+.tabelaform td {
+    padding: 10px 10px;
+}
+.input {
+    padding: 5px;
+    border: 2px solid #091F2D;
+    border-radius: 8px;
+    width: 200px;
+}
+.italico {
+    font-size: xx-small;
+    font-weight: 100;
+    font-style: oblique;
+}
+
+
+/* CONFIGURA E ANIMA MENU */
+nav {
+    width: 200px;
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color:#122235;
+}
+#menu {
+    padding-top: 10px;
+    margin: 15px;
+    width: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+}
+#menu:hover {
+    color: #1779aa;
+}
+nav a {
+    line-height: 60px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    transition-property: background-color;
+}
+nav a:hover {
+    background-color: #1779aa;
+}
+nav i {
+    font-size: 20px;
+    padding-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+nav a span {
+    z-index: -1;
+}
+#check:checked ~ nav a span{
+    display: none;
+}
+#check:checked ~ nav{
+    width: 50px;
+}
+#check {
+    display: none;
+}
+
+
+/* RODAPÉ */
+footer {
+    font-size: small;
+    display: flex;
+    background-color: #122235;
+    grid-area: footer;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+@media (max-width: 965px){
+    .tabela th {
+        display: none;
+    }
+
+    .tabela td {
+        display: flex;
+        justify-content: space-between;
+        padding: 3px;
+        border: none;
+    }
+
+    .tabela tr {
+        display: block;
+    }
+
+    .tabela td:first-of-type {
+        font-weight: bold;
+        font-size: 1.2rem;
+        background-color: #1779aa;
+        color: white;
+    }
+    
+    .tabela td:first-of-type:before {
+        content: attr(data-title);
+        display: block;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .tabela td:not(:first-of-type):before {
+        content: attr(data-title);
+        display: block;
+        font-weight: bold;
+        color: #091F2D;
+    }
+
+
+    .tabelaform td {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+    }
+
+}
